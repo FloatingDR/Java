@@ -31,7 +31,7 @@ public class RsaMain {
 
         //解密
         double m=Math.pow(C1,sk);
-        int _P1=(int)((Math.pow(C1,pk))%r);
+        int _P1=(int)((Math.pow(C1,sk))%r);
         System.out.println("解密后的密文为："+_P1);
     }
 }
